@@ -32,7 +32,7 @@ class Arm:
 
 def main():
     arm = Arm('r_arm')
-    arm.move([1]*7)
+    arm.move([.1]*7)
 
 
 if __name__ == '__main__':

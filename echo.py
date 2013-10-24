@@ -7,8 +7,7 @@ import roslib; roslib.load_manifest("pr2_controllers_msgs")
 from pr2_controllers_msgs.msg import JointTrajectoryControllerState
 
 def callback(data):
-  #print "I heard %s" % data
-  print data.actual.positions[0]
+  print data.actual.positions
 
 def listener():
   rospy.init_node('listener')
